@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>SPLI TTER</h1>
+      <section>
+        <article class="calc">
+          <div class="bill">
+            <h3>Bill</h3>
+            <div class="ecron">
+              <i class="fas fa-dollar-sign"></i>
+              <input
+                min="0"
+                id="bill"
+                dir="rtl"
+                type="number"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="select">
+            <h3>Select Tip %</h3>
+            <div class="list">
+              <div class="optionSelected">5%</div>
+              <div class="option">10%</div>
+              <div class="option">15%</div>
+
+              <div class="option">20%</div>
+              <div class="option">25%</div>
+              <input
+                type="number"
+                min="0"
+                placeholder="custom"
+                id="customTip"
+                class="customTip"
+                dir="rtl"
+
+              />
+            </div>
+          </div>
+          <div class="bill">
+            <h3>Number of People</h3>
+            <div class="ecron">
+              <i class="fas fa-user-friends"></i>
+              <input
+                min="0"
+                dir="rtl"
+                id="peopleNumber"
+                type="number"
+                placeholder="0"
+              />
+            </div>
+            <p id="zeroMessage">can't be zero</p>
+          </div>
+        </article>
+        <article class="result">
+          <div class="data">
+            <div class="dataTitle">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="dataResult" id="tipPrice">$0.00</div>
+          </div>
+          <div class="data">
+            <div class="dataTitle">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <div class="dataResult" id="totalParPerson">$0.00</div>
+          </div>
+          <button>RESET</button>
+        </article>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/oussama-ayadi1/">oussama ayadi</a>.
+    </div>
+  </body>
+</html>

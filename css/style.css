@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Montserrat", sans-serif;
+
+  font-family: "Open Sans", sans-serif;
+
+  font-family: "Space Mono", monospace;
+}
+main {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 66px;
+}
+main h1 {
+  color: #395b5d;
+}
+main section {
+  width: 100%;
+  background-color: white;
+  border-radius: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+main section .calc {
+  width: 50%;
+  margin: 40px;
+  color: hsl(186, 14%, 43%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+main section .calc .bill .ecron {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(189, 41%, 97%);
+  padding: 0 10px;
+  border-radius: 8px;
+  align-items: center;
+  height: 40px;
+}
+
+main section .calc .bill .ecron input {
+  font-size: 1.2rem;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  background-color: transparent;
+}
+main section .calc .bill p {
+  color: red;
+}
+#zeroMessage {
+  display: none;
+  position: absolute;
+}
+main section .calc .select {
+  margin: 30px 0;
+}
+
+main section .calc .select .list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+main section .calc .select .list .customTip {
+  font-size: 1.2rem;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  width: 120px;
+  height: 40px;
+  background-color: hsl(189, 41%, 97%);
+  color: #00474b;
+  align-self: end;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+main section .calc .select .list .customTip:focus {
+  border: solid 2px #50db50;
+}
+.option {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00474b;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.optionSelected {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9de9df;
+  color: #00474b;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+main section .calc .select .list #selected {
+  background-color: hsl(189, 41%, 97%);
+  color: #395b5d;
+}
+main section .calc .select .list .option:hover {
+  cursor: pointer;
+}
+main section .result {
+  width: 50%;
+  margin: 40px;
+  background-color: #00474b;
+  border-radius: 26px;
+  padding: 40px;
+}
+main section .result .data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+main section .result .data .dataTitle h3 {
+  color: hsl(185, 41%, 84%);
+}
+main section .result .data .dataTitle p {
+  color: hsl(185, 41%, 84%);
+}
+main section .result .data .dataResult {
+  color: #2bc4b0;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+main section .result button {
+  width: 100%;
+  height: 40px;
+  background-color: #0d686d;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #0d8c93;
+  margin-top: 100px;
+}
+/* phone view */
+@media only screen and (max-width: 900px) {
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  main section {
+    flex-direction: column;
+  }
+  main section .calc {
+    width: 100%;
+    margin: 0;
+    padding: 40px;
+  }
+  main section .result {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
