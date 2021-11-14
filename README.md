@@ -2,6 +2,6 @@
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg) <br/>
 
-[preview](https://www.google.com)
-
 ## Welcome! 👋
+[live preview](https://tip-calculator-html-css.netlify.app/)
+
